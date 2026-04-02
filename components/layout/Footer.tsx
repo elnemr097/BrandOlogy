@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { Mail, Phone } from 'lucide-react'
-import { CONTACT, NAV_LINKS, SERVICES } from '@/lib/constants'
+import { Mail } from 'lucide-react'
+import { CONTACT, NAV_LINKS } from '@/lib/constants'
 
 // Simple SVG social icons (Lucide doesn't include Facebook/Instagram/TikTok)
 function FacebookIcon({ className }: { className?: string }) {
@@ -181,7 +181,7 @@ export default function Footer() {
       <div className="border-t border-[rgba(0,212,200,0.08)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-[#94a3b8] text-xs">
-            © 2025 Brandology. جميع الحقوق محفوظة.
+            © {new Date().getFullYear()} Brandology. جميع الحقوق محفوظة.
           </p>
           <p className="text-[#94a3b8] text-xs">
             مملكة العربية السعودية 🇸🇦
