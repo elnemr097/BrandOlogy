@@ -10,7 +10,7 @@ export default function Testimonials() {
         <GradientText as="h2" className="text-3xl md:text-4xl font-bold mb-4">
           ماذا يقول عملاؤنا
         </GradientText>
-        <p className="text-[#94a3b8] text-lg max-w-2xl mx-auto">
+        <p className="text-[#64748b] text-lg max-w-2xl mx-auto">
           نتائج حقيقية، عملاء حقيقيون، قصص نجاح موثّقة
         </p>
       </div>
@@ -26,18 +26,18 @@ export default function Testimonials() {
             </div>
 
             {/* Quote */}
-            <p className="text-[#f0f9ff] leading-relaxed flex-1">
+            <p className="text-[#0f172a] leading-relaxed flex-1">
               &quot;{testimonial.content}&quot;
             </p>
 
             {/* Author */}
             <div className="flex items-center gap-3 mt-2">
-              <div className="w-10 h-10 rounded-full bg-[rgba(0,212,200,0.2)] border border-[rgba(0,212,200,0.3)] flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-full bg-[rgba(0,212,200,0.1)] border border-[rgba(0,212,200,0.25)] flex items-center justify-center flex-shrink-0">
                 <span className="text-[#00d4c8] font-bold">{testimonial.avatar}</span>
               </div>
               <div>
-                <p className="font-semibold text-[#f0f9ff] text-sm">{testimonial.name}</p>
-                <p className="text-[#94a3b8] text-xs">{testimonial.role}</p>
+                <p className="font-semibold text-[#0f172a] text-sm">{testimonial.name}</p>
+                <p className="text-[#64748b] text-xs">{testimonial.role}</p>
               </div>
             </div>
           </GlassCard>

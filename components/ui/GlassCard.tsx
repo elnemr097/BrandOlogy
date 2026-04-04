@@ -15,7 +15,7 @@ export default function GlassCard({ children, className = '', hover = true }: Gl
       whileHover={
         hover
           ? {
-              boxShadow: '0 0 24px rgba(0, 212, 200, 0.25), 0 0 60px rgba(0, 212, 200, 0.08)',
+              boxShadow: '0 8px 30px rgba(0,212,200,0.12), 0 2px 8px rgba(0,0,0,0.06)',
             }
           : undefined
       }

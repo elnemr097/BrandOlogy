@@ -9,7 +9,7 @@ export default function Industries() {
         <GradientText as="h2" className="text-3xl md:text-4xl font-bold mb-4">
           القطاعات التي نخدمها
         </GradientText>
-        <p className="text-[#94a3b8] text-lg max-w-2xl mx-auto">
+        <p className="text-[#64748b] text-lg max-w-2xl mx-auto">
           خبرة عملية في أكثر القطاعات نشاطاً في السوق السعودي
         </p>
       </div>
@@ -18,10 +18,10 @@ export default function Industries() {
         {INDUSTRIES.map((industry) => (
           <div
             key={industry.label}
-            className="inline-flex items-center gap-3 glass rounded-full px-5 py-3 border border-[rgba(0,212,200,0.2)] hover:border-[rgba(0,212,200,0.5)] hover:bg-[rgba(0,212,200,0.05)] transition-all cursor-default"
+            className="inline-flex items-center gap-3 bg-white rounded-full px-5 py-3 border border-[#e2e8f0] shadow-sm hover:border-[#00d4c8] hover:shadow-md transition-all cursor-default"
           >
             <span className="text-2xl">{industry.icon}</span>
-            <span className="text-[#f0f9ff] font-medium">{industry.label}</span>
+            <span className="text-[#0f172a] font-medium">{industry.label}</span>
           </div>
         ))}
       </div>

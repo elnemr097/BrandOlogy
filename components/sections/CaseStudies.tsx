@@ -32,7 +32,7 @@ export default function CaseStudies() {
         <GradientText as="h2" className="text-3xl md:text-4xl font-bold mb-4">
           من أعمالنا
         </GradientText>
-        <p className="text-[#94a3b8] text-lg max-w-2xl mx-auto">
+        <p className="text-[#64748b] text-lg max-w-2xl mx-auto">
           نتائج حقيقية لعملاء حقيقيين
         </p>
       </div>
@@ -42,8 +42,8 @@ export default function CaseStudies() {
           <GlassCard key={item.title} className="gradient-border p-6 flex flex-col gap-4">
             <Badge variant="secondary">{item.category}</Badge>
             <div className="text-2xl font-bold text-[#00d4c8]">{item.result}</div>
-            <h3 className="text-lg font-bold text-[#f0f9ff]">{item.title}</h3>
-            <p className="text-[#94a3b8] text-sm leading-relaxed">{item.description}</p>
+            <h3 className="text-lg font-bold text-[#0f172a]">{item.title}</h3>
+            <p className="text-[#64748b] text-sm leading-relaxed">{item.description}</p>
           </GlassCard>
         ))}
       </div>
@@ -51,7 +51,7 @@ export default function CaseStudies() {
       <div className="text-center">
         <Link
           href="/case-studies"
-          className="inline-flex items-center justify-center gap-2 rounded-xl glass border border-[rgba(0,212,200,0.3)] text-[#00d4c8] font-semibold px-8 py-4 text-base transition-all hover:border-[rgba(0,212,200,0.6)] hover:bg-[rgba(0,212,200,0.05)] active:scale-95"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-[#0f172a] text-white font-bold px-8 py-4 text-base transition-all hover:bg-[#1e293b] active:scale-95"
         >
           شاهد جميع الأعمال
         </Link>

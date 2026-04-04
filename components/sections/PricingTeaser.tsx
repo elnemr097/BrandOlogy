@@ -12,7 +12,7 @@ export default function PricingTeaser() {
         <GradientText as="h2" className="text-3xl md:text-4xl font-bold mb-4">
           باقات الأتمتة
         </GradientText>
-        <p className="text-[#94a3b8] text-lg max-w-2xl mx-auto">
+        <p className="text-[#64748b] text-lg max-w-2xl mx-auto">
           حلول تناسب كل حجم من الأعمال — من الشركات الناشئة إلى المؤسسات
         </p>
       </div>
@@ -27,27 +27,27 @@ export default function PricingTeaser() {
           >
             {tier.popular && (
               <div className="absolute -top-3 right-1/2 translate-x-1/2">
-                <span className="bg-[#00d4c8] text-[#060d14] text-xs font-bold px-3 py-1 rounded-full">
+                <span className="bg-[#00d4c8] text-[#0f172a] text-xs font-bold px-3 py-1 rounded-full">
                   الأكثر طلباً
                 </span>
               </div>
             )}
 
             <div>
-              <h3 className="text-xl font-bold text-[#f0f9ff] mb-1">{tier.nameAr}</h3>
-              <p className="text-sm text-[#94a3b8]">{tier.name}</p>
+              <h3 className="text-xl font-bold text-[#0f172a] mb-1">{tier.nameAr}</h3>
+              <p className="text-sm text-[#64748b]">{tier.name}</p>
             </div>
 
             <div className="flex items-baseline gap-1">
               <span className="text-3xl font-bold text-[#00d4c8]">{tier.price}</span>
               {tier.period && (
-                <span className="text-[#94a3b8] text-sm">{tier.period}</span>
+                <span className="text-[#64748b] text-sm">{tier.period}</span>
               )}
             </div>
 
             <ul className="flex flex-col gap-2 flex-1">
               {tier.features.map((feature) => (
-                <li key={feature} className="flex items-center gap-2 text-sm text-[#f0f9ff]">
+                <li key={feature} className="flex items-center gap-2 text-sm text-[#0f172a]">
                   <span className="text-[#00d4c8] font-bold flex-shrink-0">✓</span>
                   {feature}
                 </li>
@@ -62,7 +62,7 @@ export default function PricingTeaser() {
           href={CONTACT.whatsappURL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#00d4c8] text-[#060d14] font-bold px-8 py-4 text-base transition-all hover:bg-[#00f5e8] hover:shadow-[0_0_20px_rgba(0,212,200,0.4)] active:scale-95"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-[#0f172a] text-white font-bold px-8 py-4 text-base transition-all hover:bg-[#1e293b] active:scale-95"
         >
           احجز استشارة للتسعير
         </a>

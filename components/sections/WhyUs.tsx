@@ -28,12 +28,13 @@ const reasons = [
 
 export default function WhyUs() {
   return (
+    <div className="bg-[#f8fafc]">
     <SectionWrapper id="why-us">
       <div className="text-center mb-12">
         <GradientText as="h2" className="text-3xl md:text-4xl font-bold mb-4">
           لماذا Brandology؟
         </GradientText>
-        <p className="text-[#94a3b8] text-lg max-w-2xl mx-auto">
+        <p className="text-[#64748b] text-lg max-w-2xl mx-auto">
           ليس مجرد وكالة — نحن شريكك الاستراتيجي في النمو الرقمي
         </p>
       </div>
@@ -45,13 +46,14 @@ export default function WhyUs() {
             <GlassCard key={reason.title} className="p-8 flex flex-col gap-4">
               <Icon className="w-8 h-8" style={{ color: '#00d4c8' }} />
               <div>
-                <h3 className="text-xl font-bold text-[#f0f9ff] mb-2">{reason.title}</h3>
-                <p className="text-[#94a3b8] leading-relaxed">{reason.description}</p>
+                <h3 className="text-xl font-bold text-[#0f172a] mb-2">{reason.title}</h3>
+                <p className="text-[#64748b] leading-relaxed">{reason.description}</p>
               </div>
             </GlassCard>
           )
         })}
       </div>
     </SectionWrapper>
+    </div>
   )
 }
