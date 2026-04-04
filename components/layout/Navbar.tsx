@@ -39,7 +39,9 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass shadow-lg' : 'bg-transparent'
+        scrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-[#e2e8f0]'
+          : 'bg-white/0'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 md:h-16 flex items-center justify-between">
@@ -61,7 +63,7 @@ export default function Navbar() {
                   className={`relative px-3 py-1.5 text-sm font-medium rounded-lg transition-colors duration-200 ${
                     isActive
                       ? 'text-[#00d4c8]'
-                      : 'text-[#94a3b8] hover:text-[#f0f9ff]'
+                      : 'text-[#64748b] hover:text-[#0f172a]'
                   }`}
                 >
                   {label}
@@ -82,7 +84,7 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center">
           <Link
             href="/book"
-            className="px-5 py-2 rounded-xl text-sm font-bold bg-[#00d4c8] text-[#060d14] hover:bg-[#00f5e8] transition-colors duration-200 shadow-[0_0_20px_rgba(0,212,200,0.3)] hover:shadow-[0_0_28px_rgba(0,212,200,0.5)]"
+            className="px-5 py-2 rounded-full text-sm font-bold bg-[#0f172a] text-white hover:bg-[#1e293b] transition-colors duration-200"
           >
             احجز استشارة مجانية
           </Link>
@@ -92,7 +94,7 @@ export default function Navbar() {
         <button
           onClick={() => setMobileOpen((prev) => !prev)}
           aria-label={mobileOpen ? 'إغلاق القائمة' : 'فتح القائمة'}
-          className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-[#94a3b8] hover:text-[#f0f9ff] hover:bg-white/5 transition-colors"
+          className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-[#64748b] hover:text-[#0f172a] hover:bg-[#f1f5f9] transition-colors"
         >
           {mobileOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -107,7 +109,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden glass border-t border-[rgba(0,212,200,0.12)]"
+            className="lg:hidden bg-white border-t border-[#e2e8f0]"
           >
             <ul className="flex flex-col px-4 py-3 gap-1">
               {NAV_LINKS.map(({ label, href }) => {
@@ -118,8 +120,8 @@ export default function Navbar() {
                       href={href}
                       className={`block px-4 py-2.5 rounded-xl text-sm font-medium transition-colors duration-200 ${
                         isActive
-                          ? 'text-[#00d4c8] bg-[rgba(0,212,200,0.08)]'
-                          : 'text-[#94a3b8] hover:text-[#f0f9ff] hover:bg-white/5'
+                          ? 'text-[#00d4c8] bg-[rgba(0,212,200,0.06)]'
+                          : 'text-[#64748b] hover:text-[#0f172a] hover:bg-[#f8fafc]'
                       }`}
                     >
                       {label}
@@ -130,7 +132,7 @@ export default function Navbar() {
               <li className="pt-2 pb-1">
                 <Link
                   href="/book"
-                  className="block text-center px-4 py-2.5 rounded-xl text-sm font-bold bg-[#00d4c8] text-[#060d14] hover:bg-[#00f5e8] transition-colors duration-200"
+                  className="block text-center px-4 py-2.5 rounded-full text-sm font-bold bg-[#0f172a] text-white hover:bg-[#1e293b] transition-colors duration-200"
                 >
                   احجز استشارة مجانية
                 </Link>
