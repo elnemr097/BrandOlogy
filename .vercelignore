@@ -1,0 +1,10 @@
+.env.local
+.env.*.local
+.git
+.next
+node_modules
+.agents
+.claude
+.mcp.json
+skills-lock.json
+*.bak
