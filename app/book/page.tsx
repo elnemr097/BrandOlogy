@@ -35,7 +35,7 @@ export default function BookPage() {
           <GradientText as="h1" className="text-4xl md:text-6xl font-bold mb-4">
             استشارة مجانية 100%
           </GradientText>
-          <p className="text-xl text-[#94a3b8] mt-4">
+          <p className="text-xl text-[#64748b] mt-4">
             30 دقيقة مع خبير — بدون أي التزام
           </p>
         </div>
@@ -44,7 +44,7 @@ export default function BookPage() {
       {/* What to expect */}
       <SectionWrapper>
         <div className="max-w-2xl mx-auto mb-12">
-          <h2 className="text-xl font-bold text-[#f0f9ff] text-center mb-8">
+          <h2 className="text-xl font-bold text-[#0f172a] text-center mb-8">
             ماذا ستحصل في الاستشارة؟
           </h2>
           <div className="flex flex-col gap-4">
@@ -52,7 +52,7 @@ export default function BookPage() {
               <GlassCard key={item.text} className="p-5" hover={false}>
                 <div className="flex items-center gap-4">
                   <span className="text-3xl shrink-0">{item.icon}</span>
-                  <p className="text-[#f0f9ff] font-medium">{item.text}</p>
+                  <p className="text-[#0f172a] font-medium">{item.text}</p>
                 </div>
               </GlassCard>
             ))}
@@ -61,10 +61,10 @@ export default function BookPage() {
 
         {/* Lead Form — prominent */}
         <div className="max-w-xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-2 text-[#f0f9ff]">
+          <h2 className="text-2xl font-bold text-center mb-2 text-[#0f172a]">
             احجز الآن — المقاعد محدودة
           </h2>
-          <p className="text-center text-[#94a3b8] mb-8 text-sm">
+          <p className="text-center text-[#64748b] mb-8 text-sm">
             أرسل بياناتك وسنتواصل معك خلال ساعات
           </p>
           <LeadForm source="book" />
@@ -72,7 +72,7 @@ export default function BookPage() {
 
         {/* WhatsApp alternative */}
         <div className="mt-10 text-center">
-          <p className="text-[#94a3b8] mb-4">أو تواصل مباشرة عبر واتساب</p>
+          <p className="text-[#64748b] mb-4">أو تواصل مباشرة عبر واتساب</p>
           <Link
             href={CONTACT.whatsappURL}
             target="_blank"

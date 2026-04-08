@@ -48,7 +48,7 @@ export default function BlogPage() {
           <GradientText as="h1" className="text-4xl md:text-6xl font-bold mb-6">
             مدونة Brandology
           </GradientText>
-          <p className="text-xl text-[#94a3b8]">
+          <p className="text-xl text-[#64748b]">
             أفكار وأدلة عملية لنمو أعمالك
           </p>
         </div>
@@ -71,12 +71,12 @@ export default function BlogPage() {
               </span>
 
               {/* Title */}
-              <h2 className="text-lg font-bold text-[#f0f9ff] leading-snug">
+              <h2 className="text-lg font-bold text-[#0f172a] leading-snug">
                 {post.title}
               </h2>
 
               {/* Excerpt */}
-              <p className="text-sm text-[#94a3b8] leading-relaxed flex-1">
+              <p className="text-sm text-[#64748b] leading-relaxed flex-1">
                 {post.excerpt}
               </p>
 
@@ -99,7 +99,7 @@ export default function BlogPage() {
         {/* Coming soon note */}
         <div className="mt-16 text-center">
           <GlassCard className="inline-block px-8 py-4" hover={false}>
-            <p className="text-[#94a3b8] text-sm">
+            <p className="text-[#64748b] text-sm">
               قريباً — المزيد من المقالات
             </p>
           </GlassCard>

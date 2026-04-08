@@ -11,7 +11,7 @@ interface LeadFormProps {
 }
 
 const inputClass =
-  "w-full rounded-lg border border-[rgba(0,212,200,0.15)] bg-[#0d1a26] px-4 py-3 text-[#f0f9ff] placeholder-[#64748b] outline-none transition-all focus:border-[#00d4c8] focus:ring-2 focus:ring-[#00d4c8]/30";
+  "w-full rounded-lg border border-[#e2e8f0] bg-white px-4 py-3 text-[#0f172a] placeholder-[#94a3b8] outline-none transition-all focus:border-[#00d4c8] focus:ring-2 focus:ring-[#00d4c8]/20";
 
 export default function LeadForm({ source, className }: LeadFormProps) {
   const [name, setName] = useState("");

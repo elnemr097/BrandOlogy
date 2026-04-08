@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import { NextIntlClientProvider } from "next-intl";
+import { headers } from "next/headers";
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -44,22 +46,36 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Read locale from the header set by proxy.ts (bypasses next-intl plugin dependency)
+  const headersList = await headers();
+  const locale = headersList.get("x-next-intl-locale") ?? "ar";
+  const isRTL = locale === "ar";
+
+  let messages = {};
+  try {
+    messages = (await import(`../messages/${locale}.json`)).default;
+  } catch {
+    messages = (await import("../messages/ar.json")).default;
+  }
+
   return (
     <html
-      lang="ar"
-      dir="rtl"
+      lang={locale}
+      dir={isRTL ? "rtl" : "ltr"}
       className={`${cairo.variable} ${jakarta.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#060d14] text-[#f0f9ff]">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppButton />
+      <body className="min-h-full flex flex-col bg-white text-[#0f172a]">
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Navbar />
+          <main className="flex-1 pt-16">{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -62,7 +62,7 @@ export default function ServicesPage() {
           <GradientText as="h1" className="text-4xl md:text-6xl font-bold mb-4">
             خدماتنا
           </GradientText>
-          <p className="text-xl text-[#94a3b8] max-w-2xl mx-auto">
+          <p className="text-xl text-[#64748b] max-w-2xl mx-auto">
             منظومة متكاملة لنمو أعمالك
           </p>
         </SectionWrapper>
@@ -89,7 +89,7 @@ export default function ServicesPage() {
                       {service.title}
                     </h2>
                     <p className="text-xs text-[#64748b] mb-2">{service.titleEn}</p>
-                    <p className="text-sm text-[#94a3b8] font-medium mb-2">
+                    <p className="text-sm text-[#64748b] font-medium mb-2">
                       {service.tagline}
                     </p>
                     <p className="text-sm text-[#64748b]">{service.description}</p>
@@ -99,7 +99,7 @@ export default function ServicesPage() {
                       {detail.features.map((feat) => (
                         <li
                           key={feat}
-                          className="flex items-start gap-2 text-sm text-[#f0f9ff]/80"
+                          className="flex items-start gap-2 text-sm text-[#0f172a]/80"
                         >
                           <span className="text-[#00d4c8] mt-0.5">✓</span>
                           <span>{feat}</span>
@@ -126,7 +126,7 @@ export default function ServicesPage() {
       {/* Lead Form */}
       <SectionWrapper>
         <div className="max-w-xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8 text-[#f0f9ff]">
+          <h2 className="text-2xl font-bold text-center mb-8 text-[#0f172a]">
             ابدأ رحلتك معنا
           </h2>
           <LeadForm source="services-page" />

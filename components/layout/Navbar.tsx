@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { NAV_LINKS } from '@/lib/constants'
+import LanguageSwitch from '@/components/ui/LanguageSwitch'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -81,7 +82,8 @@ export default function Navbar() {
         </ul>
 
         {/* Desktop CTA */}
-        <div className="hidden lg:flex items-center">
+        <div className="hidden lg:flex items-center gap-3">
+          <LanguageSwitch />
           <Link
             href="/book"
             className="px-5 py-2 rounded-full text-sm font-bold bg-[#0f172a] text-white hover:bg-[#1e293b] transition-colors duration-200"
@@ -112,6 +114,9 @@ export default function Navbar() {
             className="lg:hidden bg-white border-t border-[#e2e8f0]"
           >
             <ul className="flex flex-col px-4 py-3 gap-1">
+              <li className="pb-1">
+                <LanguageSwitch />
+              </li>
               {NAV_LINKS.map(({ label, href }) => {
                 const isActive = pathname === href
                 return (

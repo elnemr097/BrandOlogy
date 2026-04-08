@@ -5,7 +5,7 @@ import { METRICS } from '@/lib/constants'
 
 export default function Metrics() {
   return (
-    <section className="w-full bg-[#0d1a26] border-t border-b border-[rgba(0,212,200,0.15)] py-16">
+    <section className="w-full bg-[#f8fafc] border-t border-b border-[#e2e8f0] py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {METRICS.map((metric) => (
@@ -13,7 +13,7 @@ export default function Metrics() {
               <div className="text-4xl md:text-5xl font-bold text-[#00d4c8]">
                 <AnimatedCounter value={metric.value} suffix={metric.suffix} />
               </div>
-              <p className="text-[#94a3b8] text-sm md:text-base leading-relaxed">
+              <p className="text-[#64748b] text-sm md:text-base leading-relaxed">
                 {metric.label}
               </p>
             </div>

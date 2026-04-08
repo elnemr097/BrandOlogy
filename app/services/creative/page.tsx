@@ -52,7 +52,7 @@ export default function CreativePage() {
           <GradientText as="h1" className="text-4xl md:text-6xl font-bold mb-4">
             التصميم والإنتاج الإبداعي
           </GradientText>
-          <p className="text-xl text-[#94a3b8] max-w-2xl mx-auto">
+          <p className="text-xl text-[#64748b] max-w-2xl mx-auto">
             هويتك البصرية هي أول ما يراه عميلك
           </p>
         </SectionWrapper>
@@ -60,7 +60,7 @@ export default function CreativePage() {
 
       {/* Features Grid */}
       <SectionWrapper>
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#f0f9ff]">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#0f172a]">
           خدمات الإبداع البصري
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -68,7 +68,7 @@ export default function CreativePage() {
             <GlassCard key={feat.title} className="p-6 flex flex-col gap-3">
               <div className="text-3xl">{feat.icon}</div>
               <h3 className="text-lg font-bold text-[#f59e0b]">{feat.title}</h3>
-              <p className="text-sm text-[#94a3b8]">{feat.description}</p>
+              <p className="text-sm text-[#64748b]">{feat.description}</p>
             </GlassCard>
           ))}
         </div>
@@ -77,7 +77,7 @@ export default function CreativePage() {
       {/* Lead Form */}
       <SectionWrapper>
         <div className="max-w-xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8 text-[#f0f9ff]">
+          <h2 className="text-2xl font-bold text-center mb-8 text-[#0f172a]">
             اجعل علامتك لا تُنسى
           </h2>
           <LeadForm source="creative" />

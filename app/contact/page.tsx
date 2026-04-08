@@ -63,7 +63,7 @@ export default function ContactPage() {
           <GradientText as="h1" className="text-4xl md:text-6xl font-bold mb-6">
             تواصل معنا
           </GradientText>
-          <p className="text-xl text-[#94a3b8]">
+          <p className="text-xl text-[#64748b]">
             نرد خلال دقائق — جرّب الواتساب أو أرسل لنا رسالة
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left: Contact info */}
           <div className="flex flex-col gap-6">
-            <h2 className="text-2xl font-bold text-[#f0f9ff]">
+            <h2 className="text-2xl font-bold text-[#0f172a]">
               طرق التواصل
             </h2>
             <div className="flex flex-col gap-4">
@@ -89,7 +89,7 @@ export default function ContactPage() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-xs text-[#64748b] mb-0.5">{card.title}</p>
-                      <p className="text-sm font-semibold text-[#f0f9ff] truncate">
+                      <p className="text-sm font-semibold text-[#0f172a] truncate">
                         {card.value}
                       </p>
                     </div>
@@ -110,7 +110,7 @@ export default function ContactPage() {
             {/* Map placeholder */}
             <GlassCard className="p-6 flex flex-col items-center justify-center gap-3 min-h-[150px]" hover={false}>
               <span className="text-4xl">📍</span>
-              <p className="text-[#94a3b8] text-sm font-medium">
+              <p className="text-[#64748b] text-sm font-medium">
                 الرياض، المملكة العربية السعودية
               </p>
             </GlassCard>
@@ -118,7 +118,7 @@ export default function ContactPage() {
 
           {/* Right: Lead Form */}
           <div>
-            <h2 className="text-2xl font-bold text-[#f0f9ff] mb-6">
+            <h2 className="text-2xl font-bold text-[#0f172a] mb-6">
               أرسل رسالة
             </h2>
             <LeadForm source="contact" />

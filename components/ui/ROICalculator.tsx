@@ -22,14 +22,14 @@ export default function ROICalculator() {
 
   return (
     <div className="glass rounded-2xl p-6 md:p-8 flex flex-col gap-6">
-      <h2 className="text-2xl font-bold text-[#f0f9ff] text-center">
+      <h2 className="text-2xl font-bold text-[#0f172a] text-center">
         احسب العائد المتوقع من الأتمتة
       </h2>
 
       <div className="flex flex-col gap-5">
         {/* Employees */}
         <div className="flex flex-col gap-2">
-          <div className="flex justify-between text-sm text-[#f0f9ff]/80">
+          <div className="flex justify-between text-sm text-[#0f172a]">
             <span>عدد الموظفين</span>
             <span className="font-bold text-[#00d4c8]">{employees}</span>
           </div>
@@ -50,7 +50,7 @@ export default function ROICalculator() {
 
         {/* Monthly salary */}
         <div className="flex flex-col gap-2">
-          <div className="flex justify-between text-sm text-[#f0f9ff]/80">
+          <div className="flex justify-between text-sm text-[#0f172a]">
             <span>متوسط الراتب الشهري (ريال)</span>
             <span className="font-bold text-[#00d4c8]">
               {formatNumber(salary)} ريال
@@ -73,7 +73,7 @@ export default function ROICalculator() {
 
         {/* Wasted hours per week */}
         <div className="flex flex-col gap-2">
-          <div className="flex justify-between text-sm text-[#f0f9ff]/80">
+          <div className="flex justify-between text-sm text-[#0f172a]">
             <span>عدد الساعات المهدرة أسبوعياً</span>
             <span className="font-bold text-[#00d4c8]">{wastedHours} ساعة</span>
           </div>
@@ -94,18 +94,18 @@ export default function ROICalculator() {
       </div>
 
       {/* Results */}
-      <div className="rounded-xl border border-[rgba(0,212,200,0.15)] bg-[#0d1a26] p-5 flex flex-col gap-3">
+      <div className="rounded-xl border border-[rgba(0,212,200,0.2)] bg-[#f8fafc] p-5 flex flex-col gap-3">
         <div className="flex justify-between items-center">
-          <span className="text-sm text-[#f0f9ff]/70">
+          <span className="text-sm text-[#64748b]">
             تكلفة الوقت الضائع شهرياً:
           </span>
           <span className="font-bold text-[#f59e0b] text-lg">
             {formatNumber(wasteCost)} ريال
           </span>
         </div>
-        <div className="h-px bg-[rgba(0,212,200,0.1)]" />
+        <div className="h-px bg-[rgba(0,212,200,0.15)]" />
         <div className="flex justify-between items-center">
-          <span className="text-sm text-[#f0f9ff]/70">
+          <span className="text-sm text-[#64748b]">
             وفورات متوقعة مع الأتمتة:
           </span>
           <span className="font-bold text-[#00d4c8] text-xl">

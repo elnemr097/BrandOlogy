@@ -70,7 +70,7 @@ export default function CaseStudiesPage() {
           <GradientText as="h1" className="text-4xl md:text-6xl font-bold mb-6">
             أعمالنا ونتائجنا
           </GradientText>
-          <p className="text-xl text-[#94a3b8]">
+          <p className="text-xl text-[#64748b]">
             أرقام حقيقية من عملاء حقيقيين
           </p>
         </div>
@@ -95,7 +95,7 @@ export default function CaseStudiesPage() {
                 </span>
 
                 {/* Title */}
-                <h2 className="text-lg font-bold text-[#f0f9ff] leading-snug">
+                <h2 className="text-lg font-bold text-[#0f172a] leading-snug">
                   {cs.title}
                 </h2>
 
@@ -108,7 +108,7 @@ export default function CaseStudiesPage() {
                 </p>
 
                 {/* Description */}
-                <p className="text-sm text-[#94a3b8] leading-relaxed">
+                <p className="text-sm text-[#64748b] leading-relaxed">
                   {cs.description}
                 </p>
               </GlassCard>
@@ -126,7 +126,7 @@ export default function CaseStudiesPage() {
                 {metric.value}
                 {metric.suffix}
               </p>
-              <p className="text-sm text-[#94a3b8]">{metric.label}</p>
+              <p className="text-sm text-[#64748b]">{metric.label}</p>
             </GlassCard>
           ))}
         </div>
@@ -135,7 +135,7 @@ export default function CaseStudiesPage() {
       {/* Lead Form */}
       <SectionWrapper>
         <div className="max-w-xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8 text-[#f0f9ff]">
+          <h2 className="text-2xl font-bold text-center mb-8 text-[#0f172a]">
             هل أنت التالي في قائمة النجاحات؟
           </h2>
           <LeadForm source="case-studies" />

@@ -44,7 +44,7 @@ export default function AIAutomationPage() {
           <GradientText as="h1" className="text-4xl md:text-6xl font-bold mb-4">
             أتمتة الذكاء الاصطناعي
           </GradientText>
-          <p className="text-xl text-[#94a3b8] max-w-2xl mx-auto">
+          <p className="text-xl text-[#64748b] max-w-2xl mx-auto">
             نحوّل عملياتك إلى ماكينة تعمل وحدها 24/7
           </p>
         </SectionWrapper>
@@ -52,7 +52,7 @@ export default function AIAutomationPage() {
 
       {/* Features 2x2 Grid */}
       <SectionWrapper>
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#f0f9ff]">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#0f172a]">
           ماذا نقدم لك
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -61,7 +61,7 @@ export default function AIAutomationPage() {
               <div className="text-3xl shrink-0">{feat.icon}</div>
               <div>
                 <h3 className="text-lg font-bold text-[#00d4c8] mb-2">{feat.title}</h3>
-                <p className="text-sm text-[#94a3b8]">{feat.description}</p>
+                <p className="text-sm text-[#64748b]">{feat.description}</p>
               </div>
             </GlassCard>
           ))}
@@ -77,7 +77,7 @@ export default function AIAutomationPage() {
 
       {/* Pricing */}
       <SectionWrapper>
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#f0f9ff]">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#0f172a]">
           باقات الأتمتة
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -95,7 +95,7 @@ export default function AIAutomationPage() {
               )}
               <div>
                 <p className="text-sm text-[#64748b]">{tier.name}</p>
-                <h3 className="text-2xl font-bold text-[#f0f9ff]">{tier.nameAr}</h3>
+                <h3 className="text-2xl font-bold text-[#0f172a]">{tier.nameAr}</h3>
               </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-3xl font-bold text-[#00d4c8]">{tier.price}</span>
@@ -105,7 +105,7 @@ export default function AIAutomationPage() {
               </div>
               <ul className="flex flex-col gap-2 flex-1">
                 {tier.features.map((feat) => (
-                  <li key={feat} className="flex items-start gap-2 text-sm text-[#f0f9ff]/80">
+                  <li key={feat} className="flex items-start gap-2 text-sm text-[#0f172a]/80">
                     <span className="text-[#00d4c8] mt-0.5 shrink-0">✓</span>
                     <span>{feat}</span>
                   </li>
@@ -119,7 +119,7 @@ export default function AIAutomationPage() {
       {/* Lead Form */}
       <SectionWrapper>
         <div className="max-w-xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8 text-[#f0f9ff]">
+          <h2 className="text-2xl font-bold text-center mb-8 text-[#0f172a]">
             ابدأ الأتمتة الآن
           </h2>
           <LeadForm source="ai-automation" />

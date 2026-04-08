@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "industries": "Industries",
+    "caseStudies": "Our Work",
+    "pricing": "Pricing",
+    "about": "About",
+    "blog": "Blog",
+    "bookCTA": "Book Free Consultation"
+  },
+  "hero": {
+    "badge": "Full-Stack Digital Agency — Saudi Arabia",
+    "headline1": "We Transform Your Business Into a",
+    "headline2": "Non-Stop Growth Machine",
+    "subtext": "Full-stack digital agency — automation, marketing, design, development. Everything you need in one place.",
+    "ctaPrimary": "Book Free Consultation",
+    "ctaSecondary": "View Our Work",
+    "trust1": "50+ Projects Delivered",
+    "trust2": "98% Client Satisfaction",
+    "trust3": "24/7 Continuous Support",
+    "rating": "Rated 4.9/5 by 50+ clients"
+  },
+  "common": {
+    "switchLang": "عربي",
+    "whatsapp": "Chat on WhatsApp"
+  }
+}

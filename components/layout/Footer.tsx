@@ -42,7 +42,7 @@ const QUICK_LINKS = NAV_LINKS.filter(
 
 export default function Footer() {
   return (
-    <footer className="bg-[#060d14] border-t border-[rgba(0,212,200,0.12)]">
+    <footer className="bg-white border-t border-[#e2e8f0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         {/* Top section */}
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
@@ -53,7 +53,7 @@ export default function Footer() {
                 Brandology
               </span>
             </Link>
-            <p className="text-[#94a3b8] text-sm leading-relaxed mb-6">
+            <p className="text-[#64748b] text-sm leading-relaxed mb-6">
               نبني. نؤتمت. ننمو.
               <br />
               وكالة رقمية متكاملة تجمع الأتمتة، التسويق، التصميم، والتطوير في منظومة واحدة.
@@ -65,7 +65,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="w-9 h-9 rounded-lg flex items-center justify-center bg-white/5 text-[#94a3b8] hover:text-[#00d4c8] hover:bg-[rgba(0,212,200,0.1)] transition-colors duration-200"
+                className="w-9 h-9 rounded-lg flex items-center justify-center bg-[#f1f5f9] text-[#64748b] hover:text-[#00d4c8] hover:bg-[rgba(0,212,200,0.06)] transition-colors duration-200"
               >
                 <FacebookIcon className="w-4 h-4" />
               </a>
@@ -74,7 +74,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="w-9 h-9 rounded-lg flex items-center justify-center bg-white/5 text-[#94a3b8] hover:text-[#00d4c8] hover:bg-[rgba(0,212,200,0.1)] transition-colors duration-200"
+                className="w-9 h-9 rounded-lg flex items-center justify-center bg-[#f1f5f9] text-[#64748b] hover:text-[#00d4c8] hover:bg-[rgba(0,212,200,0.06)] transition-colors duration-200"
               >
                 <InstagramIcon className="w-4 h-4" />
               </a>
@@ -83,7 +83,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
-                className="w-9 h-9 rounded-lg flex items-center justify-center bg-white/5 text-[#94a3b8] hover:text-[#00d4c8] hover:bg-[rgba(0,212,200,0.1)] transition-colors duration-200"
+                className="w-9 h-9 rounded-lg flex items-center justify-center bg-[#f1f5f9] text-[#64748b] hover:text-[#00d4c8] hover:bg-[rgba(0,212,200,0.06)] transition-colors duration-200"
               >
                 <TikTokIcon className="w-4 h-4" />
               </a>
@@ -92,7 +92,7 @@ export default function Footer() {
 
           {/* Services column */}
           <div>
-            <h3 className="text-[#f0f9ff] font-semibold mb-5 text-sm uppercase tracking-widest">
+            <h3 className="text-[#0f172a] font-semibold mb-5 text-sm uppercase tracking-widest">
               الخدمات
             </h3>
             <ul className="space-y-3">
@@ -100,7 +100,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="text-[#94a3b8] text-sm hover:text-[#00d4c8] transition-colors duration-200"
+                    className="text-[#64748b] text-sm hover:text-[#00d4c8] transition-colors duration-200"
                   >
                     {label}
                   </Link>
@@ -111,7 +111,7 @@ export default function Footer() {
 
           {/* Quick Links column */}
           <div>
-            <h3 className="text-[#f0f9ff] font-semibold mb-5 text-sm uppercase tracking-widest">
+            <h3 className="text-[#0f172a] font-semibold mb-5 text-sm uppercase tracking-widest">
               روابط سريعة
             </h3>
             <ul className="space-y-3">
@@ -119,7 +119,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="text-[#94a3b8] text-sm hover:text-[#00d4c8] transition-colors duration-200"
+                    className="text-[#64748b] text-sm hover:text-[#00d4c8] transition-colors duration-200"
                   >
                     {label}
                   </Link>
@@ -130,7 +130,7 @@ export default function Footer() {
 
           {/* Contact column */}
           <div>
-            <h3 className="text-[#f0f9ff] font-semibold mb-5 text-sm uppercase tracking-widest">
+            <h3 className="text-[#0f172a] font-semibold mb-5 text-sm uppercase tracking-widest">
               تواصل معنا
             </h3>
             <ul className="space-y-4">
@@ -139,7 +139,7 @@ export default function Footer() {
                   href={CONTACT.whatsappURL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-[#94a3b8] text-sm hover:text-[#00d4c8] transition-colors duration-200 group"
+                  className="flex items-center gap-3 text-[#64748b] text-sm hover:text-[#00d4c8] transition-colors duration-200 group"
                 >
                   {/* WhatsApp SVG */}
                   <span className="w-8 h-8 rounded-lg flex items-center justify-center bg-[rgba(37,211,102,0.1)] text-[#25D366] flex-shrink-0 group-hover:bg-[rgba(37,211,102,0.2)] transition-colors">
@@ -154,7 +154,7 @@ export default function Footer() {
               <li>
                 <a
                   href={`mailto:${CONTACT.email}`}
-                  className="flex items-center gap-3 text-[#94a3b8] text-sm hover:text-[#00d4c8] transition-colors duration-200 group"
+                  className="flex items-center gap-3 text-[#64748b] text-sm hover:text-[#00d4c8] transition-colors duration-200 group"
                 >
                   <span className="w-8 h-8 rounded-lg flex items-center justify-center bg-[rgba(0,212,200,0.08)] text-[#00d4c8] flex-shrink-0 group-hover:bg-[rgba(0,212,200,0.15)] transition-colors">
                     <Mail size={15} />
@@ -168,7 +168,7 @@ export default function Footer() {
             <div className="mt-8">
               <Link
                 href="/book"
-                className="inline-block w-full text-center px-4 py-2.5 rounded-xl text-sm font-bold bg-[#00d4c8] text-[#060d14] hover:bg-[#00f5e8] transition-colors duration-200"
+                className="inline-block w-full text-center px-4 py-2.5 rounded-full text-sm font-bold bg-[#0f172a] text-white hover:bg-[#1e293b] transition-colors duration-200"
               >
                 احجز استشارة مجانية
               </Link>
@@ -178,7 +178,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-[rgba(0,212,200,0.08)]">
+      <div className="border-t border-[#e2e8f0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-[#94a3b8] text-xs">
             © {new Date().getFullYear()} Brandology. جميع الحقوق محفوظة.

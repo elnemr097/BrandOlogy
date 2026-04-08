@@ -88,7 +88,7 @@ export default function IndustriesPage() {
           <GradientText as="h1" className="text-4xl md:text-6xl font-bold mb-6">
             القطاعات التي نخدمها
           </GradientText>
-          <p className="text-xl text-[#94a3b8] max-w-2xl mx-auto">
+          <p className="text-xl text-[#64748b] max-w-2xl mx-auto">
             خبرة عميقة في أكثر من 9 قطاعات — حلول مصمّمة لطبيعة كل صناعة
           </p>
         </div>
@@ -102,13 +102,13 @@ export default function IndustriesPage() {
             return (
               <GlassCard key={industry.label} className="p-8 flex flex-col gap-4" hover>
                 <div className="text-5xl mb-2">{industry.icon}</div>
-                <h2 className="text-xl font-bold text-[#f0f9ff]">{industry.label}</h2>
+                <h2 className="text-xl font-bold text-[#0f172a]">{industry.label}</h2>
                 {detail && (
                   <ul className="flex flex-col gap-2 mt-1">
                     {detail.bullets.map((bullet) => (
                       <li
                         key={bullet}
-                        className="flex items-start gap-2 text-sm text-[#94a3b8]"
+                        className="flex items-start gap-2 text-sm text-[#64748b]"
                       >
                         <span className="text-[#00d4c8] mt-0.5 shrink-0">✓</span>
                         <span>{bullet}</span>
@@ -125,7 +125,7 @@ export default function IndustriesPage() {
       {/* Lead Form */}
       <SectionWrapper>
         <div className="max-w-xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8 text-[#f0f9ff]">
+          <h2 className="text-2xl font-bold text-center mb-8 text-[#0f172a]">
             هل قطاعك في القائمة؟ تواصل معنا
           </h2>
           <LeadForm source="industries" />

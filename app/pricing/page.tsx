@@ -127,22 +127,22 @@ function PricingCard({ tier }: { tier: PricingTier }) {
           </span>
         )}
         <div>
-          <h3 className="text-lg font-bold text-[#f0f9ff]">{tier.nameAr}</h3>
+          <h3 className="text-lg font-bold text-[#0f172a]">{tier.nameAr}</h3>
           <p className="text-xs text-[#64748b]">{tier.name}</p>
         </div>
         <div>
           <span
-            className={`text-4xl font-extrabold ${tier.popular ? "gradient-text" : "text-[#f0f9ff]"}`}
+            className={`text-4xl font-extrabold ${tier.popular ? "gradient-text" : "text-[#0f172a]"}`}
           >
             {tier.price}
           </span>
           {tier.period && (
-            <span className="text-sm text-[#94a3b8] mr-1">{tier.period}</span>
+            <span className="text-sm text-[#64748b] mr-1">{tier.period}</span>
           )}
         </div>
         <ul className="flex flex-col gap-2 flex-1">
           {tier.features.map((feature) => (
-            <li key={feature} className="flex items-start gap-2 text-sm text-[#94a3b8]">
+            <li key={feature} className="flex items-start gap-2 text-sm text-[#64748b]">
               <span className="text-[#00d4c8] mt-0.5 shrink-0">✓</span>
               <span>{feature}</span>
             </li>
@@ -155,7 +155,7 @@ function PricingCard({ tier }: { tier: PricingTier }) {
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="text-2xl font-bold text-[#f0f9ff] mb-8 text-center">
+    <h2 className="text-2xl font-bold text-[#0f172a] mb-8 text-center">
       {children}
     </h2>
   );
@@ -170,7 +170,7 @@ export default function PricingPage() {
           <GradientText as="h1" className="text-4xl md:text-6xl font-bold mb-6">
             باقات واضحة بدون مفاجآت
           </GradientText>
-          <p className="text-xl text-[#94a3b8]">
+          <p className="text-xl text-[#64748b]">
             اختر ما يناسب أعمالك — ويمكنك الترقية في أي وقت
           </p>
           <p className="mt-4 text-sm text-[#64748b]">
@@ -212,10 +212,10 @@ export default function PricingPage() {
       {/* Lead Form */}
       <SectionWrapper>
         <div className="max-w-xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-4 text-[#f0f9ff]">
+          <h2 className="text-2xl font-bold text-center mb-4 text-[#0f172a]">
             هل تحتاج مساعدة في الاختيار؟
           </h2>
-          <p className="text-center text-[#94a3b8] mb-8">
+          <p className="text-center text-[#64748b] mb-8">
             نصمّم لك باقة مخصصة تناسب ميزانيتك وأهدافك
           </p>
           <LeadForm source="pricing" />
